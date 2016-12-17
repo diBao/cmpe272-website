@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+	<title>User Database</title>
+</head>
+
+<input type ="button" onclick="javascript:location.href='../newuser.php'" value="Back"></input>
+
+ <body style = "background -color: #F0E68C">
+ 	<h2 style = "font-family: arial color: blue">
+ 		Querying a MySQL database.
+ 	</h2>
+
+ 	<form method = "post" action = "search.php">
+ 		<p>Select a field to display:
+
+ 			<select name = "select">
+ 				<option selected = "selected">*</option>
+ 				<option>FirstName</option>
+ 				<option>LastName</option>
+ 				<option>Email</option>
+ 				<option>HomePhone</option>
+ 				<option>CellPhone</option>
+ 			</select>
+ 		</p>
+		<p>input your infomation:
+	        <input name = "INFO" type="text" placeholder="Type search info" />
+	        </p>
+
+
+ 		<input type = "submit" value = "Send Query"
+ 			style = "background-color: black;
+ 			color: white; font-weight: bold" />
+
+ 	</form>
+ </body>
+</html>
+
